@@ -2,7 +2,7 @@ Puppet-Notepad2
 ===============
 
 A puppet module to install Notepad2 on Windows Systems.
-
+[![Project Build Status](https://travis-ci.org/tombuildsstuff/puppet-notepad2.svg?branch=master)](https://travis-ci.org/tombuildsstuff/puppet-notepad2)
 
 Installation
 ------------
