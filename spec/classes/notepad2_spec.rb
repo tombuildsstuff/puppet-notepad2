@@ -20,10 +20,13 @@ describe 'notepad2', :type => :class do
   ###########
   context 'installing notepad2' do
     it { should contain_class('notepad2') }
-    it { should contain_file('c:\\temp').with_ensure('directory') }
-    it { should contain_download_file('notepad2::install::download')
-                       .with_url('http://www.flos-freeware.ch/zip/Notepad2_4.2.25_x64.exe')
-                       .with_destination_directory('c:\\temp') }
+    it { should contain_file('c:\\temp').with({
+      'ensure' => 'directory'
+    })}
+    it { should contain_download_file('notepad2::install::download').with({
+      'url' => 'http://www.flos-freeware.ch/zip/Notepad2_4.2.25_x64.exe',
+      'destination_directory' => 'c:\\temp'
+    })}
 
   end
 
